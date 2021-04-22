@@ -12,7 +12,7 @@ namespace DeviceTwinNotification
   public static class Function1
   {
     [FunctionName("Function1")]
-    public static async Task Run([EventHubTrigger("test", Connection = "EventConnection")] EventData[] events, ILogger log)
+    public static async Task Run([EventHubTrigger("twinreport", Connection = "EventConnection")] EventData[] events, ILogger log)
     {
       var exceptions = new List<Exception>();
 
